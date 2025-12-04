@@ -2,15 +2,23 @@
 
 Fall semester 2025
 
+## New Password Hashes [PLAINTEXT | NEW HASH]
+
+yoda@theforce.org: test123 | $2y$10$BzTE3bHNpgcLGlvDAOdAsut5JUPAkEh45HYh1IWgel3DlrAw6Pwo2
+rey@theforce.org: hello123 | $2y$10$tG4FvMedTtjsXqQ.SDc5NeCyqDCt0Qc0LIvVdLy7qPfKHr.Z.9Ohi
+leia@rebellion.org: password | $2y$10$lioNrHGfNJYjgAyhGrWPv.pGgahZSOFiPHkxURfGVJCkVpaOtnwhW
+luke@theforce.org : mypwd | $2y$10$.24Lf3l1HvOTAv0U2ugqFOfMAl.5p98Xj.NpbkRm2GCikiFCLzKLa
+
+
 ## Assignment
 
 * Assignment 3
 
 ## Developer info
 
-* Full name:
-* B00/B01 number:
-* Dal email address:
+* Full name: Alex Russell
+* B00/B01 number: B00920458
+* Dal email address: alexrussell@dal.ca
 
 ## Gitlab assignment folder
 
