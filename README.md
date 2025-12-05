@@ -31,6 +31,21 @@ Really proud of this solution actually.
 
 * Steps to set up and run the application
 
+## Tests
+
+*Disclaimer*: all tests were done during development of that feature. So UI will be different throughout. 
+
+### Test 1: ID routing (Default) 
+
+![screenshot](public/assets/test1.png)
+
+### Test 2: Slug Routing (Optional)
+
+![screenshot](public/assets/test2.png)
+at the time of this screenshot a visual bug when searching with slug was occuring with occuring with the id variable.
+
+### Test 3: 
+
 ## References/citations
 
 1. APA/ACM/IEEE format

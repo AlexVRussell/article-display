@@ -34,7 +34,7 @@ Class ArticleController {
     }
 
     /** 
-     * Create a method to get article by ID
+     * Create a method to get article by ID or slug
      * 
      * @param int $id
      * 
@@ -49,6 +49,19 @@ Class ArticleController {
         // Thanks - https://www.quora.com/How-do-you-fix-fatal-error-call-to-a-member-function-bind_param-on-bool-PHP-MySQL-mysqli-development 
         $stmt = $this->db->prepare($sql);
         $stmt->bind_param("i", $id);
+        $stmt->execute();
+
+        $result = $stmt->get_result();
+
+        return $result->fetch_assoc() ?: null;
+    }
+
+    public function getArticleBySlug (string $slug): ?array {
+        $article = null;
+
+        $sql = "SELECT * FROM articles WHERE a_slug = ?;";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bind_param("s", $slug);
         $stmt->execute();
 
         $result = $stmt->get_result();
