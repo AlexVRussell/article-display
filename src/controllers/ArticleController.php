@@ -20,7 +20,7 @@ Class ArticleController {
     public function getAllArticles(): array {
         $articles = [];
 
-        // Select all from artices where Updated at DESC?
+        // Select all from artices and order by when created (DESC, so its the latest first)
         $sql = "SELECT * from articles ORDER BY created_at DESC;";
         $result = $this->db->query($sql);
 
@@ -36,19 +36,24 @@ Class ArticleController {
     /** 
      * Create a method to get article by ID
      * 
+     * @param int $id
+     * 
      */
     public function getArticleById(int $id): ?array {
         $article = null; 
-        // Select article by ID
-        $sql = "SELECT * FROM articles WHERE id = ?;";
-
+        // Select article by ID 
+        $sql = "SELECT * FROM articles WHERE a_id = ?;";
+        
+        // prepare returning false? 
+        // future me, i put 'id' in the the sql query not 'a_id'
+        // Thanks - https://www.quora.com/How-do-you-fix-fatal-error-call-to-a-member-function-bind_param-on-bool-PHP-MySQL-mysqli-development 
         $stmt = $this->db->prepare($sql);
         $stmt->bind_param("i", $id);
         $stmt->execute();
 
         $result = $stmt->get_result();
 
-        return $article ?? null;
+        return $result->fetch_assoc() ?: null;
     }
 }
 ?>

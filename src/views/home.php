@@ -8,7 +8,8 @@ $articles = $articleController->getAllArticles();
     <article>
         <h2><?= htmlspecialchars($a['a_title']) ?></h2>
         <p><?= htmlspecialchars($a['a_teaser']) ?></p>
-        <a href="index.php?page=article&id=<?= $a['id'] ?>">Read more</a>
+        <!-- Next step is routing to full article -->
+        <a href="index.php?page=article&id=<?= $a['a_id'] ?>">Read more</a>
     </article>
     <hr>
 <?php endforeach; ?>

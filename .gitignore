@@ -1,0 +1,2 @@
+git rm --cached newHashes.txt src/config/config.php
+git commit -m "Stop tracking sensitive files"

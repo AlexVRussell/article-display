@@ -5,6 +5,6 @@
     'host' => 'localhost',
     'dbname' => 'tigernews',
     'username' => 'root',
-    'password' => 'Spar@5180*' // set if you have one
+    'password' => '' // set because i have one for MySQL workbench
  ];
 ?>
