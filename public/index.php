@@ -1,11 +1,15 @@
 <?php
 // public/index.php
 
+session_start();
+
+
 require __DIR__ . '/../src/Database/database.php';
 require __DIR__ . '/../src/controllers/ArticleController.php';
+require __DIR__ . '/../src/controllers/UserController.php';
 
-// Create controller instance (ArticleController expects $db from database.php)
 $articleController = new ArticleController($db);
+$userController = new UserController($db);
 
 $page = $_GET['page'] ?? 'home';
 

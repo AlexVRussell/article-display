@@ -56,6 +56,12 @@ Class ArticleController {
         return $result->fetch_assoc() ?: null;
     }
 
+    /**
+     * Get article by slug, assumption that slug is known (I included slug for each article in preview)
+     * Pretty much identical to getArticleById()
+     * 
+     * @param string $slug
+     */
     public function getArticleBySlug (string $slug): ?array {
         $article = null;
 
