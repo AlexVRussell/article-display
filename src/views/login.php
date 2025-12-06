@@ -1,9 +1,9 @@
-<h1>Login</h1>
-
 <?php if (!empty($error)): ?>
     <p style="color:red;"><?= htmlspecialchars($error) ?></p>
 <?php endif; ?>
 
+<div style="max-width:800px; margin:20px auto; font-family:Arial, sans-serif;">
+<h1>Login</h1>
 <form method="POST" action="index.php?page=login">
     <label>Email:</label>
     <input type="email" name="email" required>
@@ -15,3 +15,4 @@
 </form>
 
 <a href="index.php?page=register">Don't have an account? Register</a>
+</div>

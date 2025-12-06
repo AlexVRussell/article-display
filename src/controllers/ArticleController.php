@@ -74,6 +74,20 @@ Class ArticleController {
 
         return $result->fetch_assoc() ?: null;
     }
+
+    /**
+     * Get full article content, only if user is logged in for premium articles
+     * 
+     * @param int $id
+     */
+    public function getFullArticle(int $id) {
+        $article = $this->getArticleById($id);
+
+        if ($article['is_premium'] && !isset($_SESSION['user_id'])) {
+            $article['content'] = null;
+        }
+        return $article;
+    }
 }
 
 ?>

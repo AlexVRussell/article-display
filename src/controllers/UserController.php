@@ -60,7 +60,7 @@ Class UserController {
      * @param string $password
      */
     public function login(string $email, string $password): array {
-        // sanitization
+        // light sanitization
         $email = trim(filter_var($email, FILTER_SANITIZE_EMAIL));
 
         $sql = "SELECT * FROM users WHERE email = ?;";
