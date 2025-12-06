@@ -75,4 +75,5 @@ Class ArticleController {
         return $result->fetch_assoc() ?: null;
     }
 }
+
 ?>

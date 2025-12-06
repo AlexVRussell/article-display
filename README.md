@@ -21,8 +21,8 @@ Fall semester 2025
 ## Application name and description
 
 * Include list of features implemented
-Created class `ArticleController` using PHP OOP princples with getter methods: `getAllArticles()` and `getArticleById()` to display/route to desired results.
-Really proud of this solution actually.
+- Created class `ArticleController` using PHP OOP princples with getter methods: `getAllArticles()` and `getArticleById()` to display/route to desired results. (Really proud of this solution actually)
+- Continuing with an OOP approach (since thats where im most comfortable) with user auth. 
 
 * Any APIs used/created and their URLs.
 * Any additional notes or considerations.
@@ -52,3 +52,4 @@ at the time of this screenshot a visual bug when searching with slug was occurin
 
 - https://www.quora.com/How-do-you-fix-fatal-error-call-to-a-member-function-bind_param-on-bool-PHP-MySQL-mysqli-development
 - https://stackoverflow.com/questions/17056349/convert-sql-results-into-php-array
+- https://www.geeksforgeeks.org/php/how-to-validate-password-using-regular-expressions-in-php/

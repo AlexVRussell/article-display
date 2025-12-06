@@ -6,4 +6,6 @@
     <input type="password" name="password" required>
 
     <button type="submit">Register</button>
+
+    <a href="index.php?page=login">Already have an account? Login here</a>
 </form>
