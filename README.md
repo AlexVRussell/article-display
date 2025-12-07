@@ -2,9 +2,6 @@
 
 Fall semester 2025
 
-## New Password Hashes [PLAINTEXT | NEW HASH]
-Located in newHashes.txt
-
 ## Assignment
 
 * Assignment 3
