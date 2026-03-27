@@ -30,7 +30,7 @@ at the time of this screenshot a visual bug when searching with slug was occurin
 
 ### Test 3: Premium Article without being logged in
 ![screenshot](public/assets/test3.png)
-As you can see we are logged in as Yoda and now have access to the articles content
 
 ### Test 4: Premium Article while being registered
-![screenshot](public/assets/test4.png)
+![screenshot](public/assets/test4.
+As you can see we are logged in as Yoda and now have access to the articles content
