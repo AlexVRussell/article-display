@@ -1,4 +1,4 @@
-## Application name and description
+### Application name and description
 
 - Created class `ArticleController` using PHP OOP princples with getter methods: `getAllArticles()` and `getArticleById()` to display/route to desired results. (Really proud of this solution actually)
 - Continuing with an OOP approach (since thats where im most comfortable) with user auth. 
@@ -32,5 +32,5 @@ at the time of this screenshot a visual bug when searching with slug was occurin
 ![screenshot](public/assets/test3.png)
 
 ### Test 4: Premium Article while being registered
-![screenshot](public/assets/test4.
+![screenshot](public/assets/test4.png)
 As you can see we are logged in as Yoda and now have access to the articles content
